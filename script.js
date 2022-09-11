@@ -31,34 +31,28 @@ $(document).ready(function(){
         arr.push($(this).index())
         o.push($(this).index())
         $(this).addClass("bo");
-        let c = 0
-        for (i = 0;i < win.length; i++){
-            let no = 0
-            for (j = 0 ; j < 3 ; j++  ){
-                if (o.includes(win[i][j]) == true){
-                    no += 1
-                    if (no == 3){
-                        $(".wintext").css("color","green")
-                        $(".win").css("background","radial-gradient(#fff 10%,green)")
-                        $(".winer").show()
-                        $(".r").hide()
-                        break
-                    }}
-                    else if (c.length == 5 ){
-                        $(".wintext").css("color","blue")
-                        $(".wintext").text("winner no")
-                        $(".win").css("background","radial-gradient(#fff 10%,blue)")
-                        $(".winer").show()
-                        $(".r").hide()
-                    }  
+            for (i = 0;i < win.length; i++){
+                let no = 0
+                for (j = 0 ; j < 3 ; j++  ){
+                    if (o.includes(win[i][j]) == true){
+                        no += 1
+                        if (no == 3){
+                            $(".wintext").css("color","green")
+                            $(".win").css("background","radial-gradient(#fff 10%,green)")
+                            $(".winer").show()
+                            $(".r").hide()
+                            break
+                        }
+                    }
+                }
             }
-        }
       }
-    else if (n % 2 != 0){
+    else{
         $(this).children(".fa-x").show()
         arr.push($(this).index())
         x.push($(this).index())
         $(this).addClass("bx");
+        
         for (i = 0;i < win.length; i++){
             let nx = 0
             for (j = 0 ; j < 3 ; j++  ){
