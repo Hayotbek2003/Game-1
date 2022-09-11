@@ -17,8 +17,6 @@ body{
     position: fixed;
 }
 .cards{
-    padding: 10px;
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 33.333333% 33.333333% 33.333333%;
 }
@@ -36,7 +34,7 @@ body{
 }
 .but{
     position: fixed;
-    bottom: 15px;
+    bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
