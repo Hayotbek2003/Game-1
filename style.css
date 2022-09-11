@@ -92,7 +92,8 @@ i{
     position: absolute;
     right: 10px;
     top: 10px;
-    font-size: 20px;
+    font-size: 22px;
+    color: black;
     
 }
 @keyframes win {
